@@ -1,16 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>The Simple life</title>
+    <link rel='stylesheet' href='css/GitHub2.css' type='text/css'/>
+    <link rel='stylesheet' href='css/style.css' type='text/css'/>
+    <link rel="stylesheet" href="css/highlight.css">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/director.min.js"></script>   
+    <script src="js/ractive.min.js"></script>    
+    <script src="js/marked.min.js"></script>    
+    <script src="config.js"></script>
+    <script src="http://static.duoshuo.com/embed.js"></script>
+    <script src="http://apps.bdimg.com/libs/highlight.js/8.6/highlight.min.js"></script>
 
 
     
     <style type="text/css" media="screen">
     
- /* RESET */
+    /* RESET */
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -29,7 +38,6 @@
     :focus { outline: 0; }
     del { text-decoration: line-through; }
     table { border-collapse: collapse; border-spacing: 0; }
-
     /* GLOBAL ELEMENTS */
     body { background: #fff; }
     body, input, textarea { color: #000; font: 14px/20px "helvetica neue",helvetica,arial,sans-serif; }
@@ -46,9 +54,6 @@
     h1, h2, h3, h4, h5, h6 {  font-weight:normal; clear:both; }
     img { background: #eee; }
     a img:focus, a img:hover, a img:active { background: #dd3333; }
-
- 
-
     /* DEFAULT CSS */
     #header .menu {
         border-bottom: 1px solid #ccc;
@@ -321,7 +326,6 @@
                 #sidebar h3 a:focus, #sidebar h3 a:hover, #sidebar h3 a:active {
                     color: #dd3333;
                 }
-
             #sidebar ul {
                 margin-bottom: 0;
             }
@@ -448,7 +452,12 @@
                             <li class="rss"><a href="{RSS}">RSS</a></li>
                         </ul>
                     </div><!-- #pages -->
-
+                    <div id="search">
+                        <form action="/search" method="get">
+                            <input type="text" name="q" value="{SearchQuery}"/>
+                            <input type="submit" value="Search" class="search-button"/>
+                        </form>
+                    </div><!-- #search -->
                 </div><!-- .menu -->
             </div><!-- #access -->
             <div id="branding">
@@ -457,7 +466,7 @@
             </div><!-- #branding -->
         </div><!-- #header -->
         <div id="main">
-           <div id="container">
+            <div id="container">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
 </div>
 <script type="text/ractive" id="listTpl">
