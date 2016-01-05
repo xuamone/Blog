@@ -4,58 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>The Simple life</title>
-    <link rel='stylesheet' href='css/GitHub2.css' type='text/css'/>
-    <link rel='stylesheet' href='css/style.css' type='text/css'/>
-    <link rel="stylesheet" href="css/highlight.css">
-    <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/director.min.js"></script>   
-    <script src="js/ractive.min.js"></script>    
-    <script src="js/marked.min.js"></script>    
-    <script src="config.js"></script>
-    <script src="http://static.duoshuo.com/embed.js"></script>
-    <script src="http://apps.bdimg.com/libs/highlight.js/8.6/highlight.min.js"></script>
 
 
     
     <style type="text/css" media="screen">
     
 
-    /* RESET */
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, font, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td {
-        margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;
-    }
-    body { line-height: 1; }
-    ol, ul { list-style: none; }
-    blockquote, q { quotes: none; }
-    blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-    :focus { outline: 0; }
-    del { text-decoration: line-through; }
-    table { border-collapse: collapse; border-spacing: 0; }
-
-    /* GLOBAL ELEMENTS */
-    body { background: #fff; }
-    body, input, textarea { color: #000; font: 14px/20px "helvetica neue",helvetica,arial,sans-serif; }
-    p, ul, ol, dd, pre { margin-bottom: 20px; }
-    pre, code { font: 12px Monaco,monospace; line-height: 20px; }
-    blockquote { border-left: 5px solid #ddd; color: #555; font-style: italic; margin-bottom: 20px; padding-left: 10px; }
-    table { border: 1px solid #ccc; border-width: 1px 1px 0 1px; font-size: 14px; line-height: 20px; margin: 0 0 22px 0; text-align: left; }
-    caption { text-align: left; }
-    tr { border-bottom: 1px solid #ccc; }
-    th, td { padding: .7em 1.25em; }
-    hr { background-color: #ccc; border: 0; color: #555; height: 1px; margin-bottom: 20px; }
-    a:link, a:visited { color: #555; }
-    a:focus, a:hover, a:active { color: #dd3333; }
-    h1, h2, h3, h4, h5, h6 {  font-weight:normal; clear:both; }
-    img { background: #eee; }
-    a img:focus, a img:hover, a img:active { background: #dd3333; }
+ 
 
     /* DEFAULT CSS */
     #header .menu {
@@ -456,12 +411,21 @@
                             <li class="rss"><a href="{RSS}">RSS</a></li>
                         </ul>
                     </div><!-- #pages -->
-                    <div id="search">
+
+
+
+
+
+                   <div id="search">
                         <form action="/search" method="get">
-                            <input type="text" name="q" value="{SearchQuery}"/>
-                            <input type="submit" value="Search" class="search-button"/>
+            
+                   <li cclass="search-button"><a href="/archive">&#171; Previous</a></li>
+                            <li class="search-button"><a href="/mobile">Next &#187;</a></li>
+
                         </form>
-                    </div><!-- #search -->
+                        </div>
+
+<!-- #search -->
                 </div><!-- .menu -->
             </div><!-- #access -->
             <div id="branding">
